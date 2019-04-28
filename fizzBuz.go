@@ -15,7 +15,7 @@ func fizzBuzz(val int) (res string) {
 
 func main()  {
 	for i := 0; i <= 100; i++ {
-		if i != 0 && fizzBuzz(i) != "" {
+		if fizzBuzz(i) != "" {
 			fmt.Println(fizzBuzz(i))
 		} else {
 			fmt.Println(i)
