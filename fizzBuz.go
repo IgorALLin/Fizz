@@ -15,8 +15,10 @@ func fizzBuzz(val int) (res string) {
 
 func main()  {
 	for i := 0; i <= 100; i++ {
-		if fizzBuzz(i) != "" {
-			fmt.Println(fizzBuzz(i))
+		fizzBuzz := fizzBuzz(i)
+
+		if fizzBuzz != "" {
+			fmt.Println(fizzBuzz)
 		} else {
 			fmt.Println(i)
 		}
